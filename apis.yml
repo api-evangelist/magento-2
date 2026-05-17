@@ -80,7 +80,7 @@ common:
     url: https://github.com/magento/magento2
   - type: Pricing
     url: https://business.adobe.com/products/magento/magento-commerce.html
-  - type: Sign Up
+  - type: SignUp
     url: https://account.magento.com/customer/account/create
 maintainers:
   - FN: Kin Lane
