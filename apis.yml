@@ -72,6 +72,8 @@ apis:
       - type: Documentation
         url: https://developer.adobe.com/commerce/webapi/graphql/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/adobe-commerce
   - type: Website
     url: https://business.adobe.com/products/magento/magento-commerce.html
   - type: Documentation
