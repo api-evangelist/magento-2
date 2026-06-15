@@ -1,0 +1,331 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Adobe Commerce (Magento 2) REST API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Auth",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Request an admin integration token",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/integration/admin/token",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Request an admin integration token"
+        },
+        {
+          "info": {
+            "name": "Request a customer integration token",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/integration/customer/token",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Request a customer integration token"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Products",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search products",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/products",
+            "params": [
+              {
+                "name": "searchCriteria",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Search products"
+        },
+        {
+          "info": {
+            "name": "Create a product",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/products",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a product"
+        },
+        {
+          "info": {
+            "name": "Get product by SKU",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/products/:sku",
+            "params": [
+              {
+                "name": "sku",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get product by SKU"
+        },
+        {
+          "info": {
+            "name": "Update product by SKU",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://{host}/rest/{storeCode}/V1/products/:sku",
+            "params": [
+              {
+                "name": "sku",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update product by SKU"
+        },
+        {
+          "info": {
+            "name": "Delete product by SKU",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{host}/rest/{storeCode}/V1/products/:sku",
+            "params": [
+              {
+                "name": "sku",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete product by SKU"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Orders",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search orders",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/orders",
+            "params": [
+              {
+                "name": "searchCriteria",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Search orders"
+        },
+        {
+          "info": {
+            "name": "Get order by ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/orders/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get order by ID"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Customers",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a customer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/customers",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a customer"
+        },
+        {
+          "info": {
+            "name": "Search customers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/customers/search"
+          },
+          "docs": "Search customers"
+        },
+        {
+          "info": {
+            "name": "Get customer by ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/customers/:customerId",
+            "params": [
+              {
+                "name": "customerId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get customer by ID"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Carts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the current customer cart",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/carts/mine"
+          },
+          "docs": "Get the current customer cart"
+        },
+        {
+          "info": {
+            "name": "Create a customer cart",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/carts/mine"
+          },
+          "docs": "Create a customer cart"
+        },
+        {
+          "info": {
+            "name": "Add an item to the current cart",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/carts/mine/items",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add an item to the current cart"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Categories",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the category tree",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/categories"
+          },
+          "docs": "Get the category tree"
+        },
+        {
+          "info": {
+            "name": "Get category by ID",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/categories/:categoryId",
+            "params": [
+              {
+                "name": "categoryId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get category by ID"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
