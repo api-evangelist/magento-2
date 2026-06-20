@@ -10,7 +10,7 @@ description: >-
   Authentication supports OAuth 1.0a, token-based authentication (admin and
   customer tokens), and Adobe IMS for the cloud service.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Ecommerce
 - Commerce
