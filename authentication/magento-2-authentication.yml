@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/magento-2-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: BearerAuth
+  type: http
+  scheme: bearer
+  description: Bearer token obtained from /V1/integration/admin/token or /V1/integration/customer/token.
+  sources:
+  - openapi/magento-2-openapi.yml

@@ -74,6 +74,12 @@ apis:
   - url: graphql/magento-2-graphql.md
     type: GraphQL
 common:
+- type: VulnerabilityDisclosure
+  url: security/magento-2-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/magento-2-domain-security.yml
+- type: Authentication
+  url: authentication/magento-2-authentication.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/adobe-commerce
 - type: Website
