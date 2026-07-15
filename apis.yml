@@ -74,6 +74,8 @@ apis:
   - url: graphql/magento-2-graphql.md
     type: GraphQL
 common:
+- type: AgenticAccess
+  url: agentic-access/magento-2-agentic-access.yml
 - type: VulnerabilityDisclosure
   url: security/magento-2-vulnerability-disclosure.yml
 - type: DomainSecurity
