@@ -1,0 +1,57 @@
+openapi: 3.1.0
+info:
+  title: Adobe Commerce (Magento 2) REST Auth Orders API
+  description: Adobe Commerce (formerly Magento 2) exposes a REST API at the `/rest/{store-code}/V1/` (or simply `/rest/V1/`) base path for managing products, orders, customers, carts, categories, and other commerce resources. Authentication supports admin and customer integration tokens issued by the API, plus OAuth 1.0a for third-party integrations.
+  version: 1.0.0
+  contact:
+    name: Adobe Commerce
+    url: https://developer.adobe.com/commerce/webapi/rest/
+servers:
+- url: https://{host}/rest/{storeCode}
+  description: Adobe Commerce instance (replace {host} with your storefront and {storeCode} with `V1` or e.g. `default`)
+  variables:
+    host:
+      default: example.com
+    storeCode:
+      default: V1
+security:
+- BearerAuth: []
+tags:
+- name: Orders
+paths:
+  /V1/orders:
+    get:
+      tags:
+      - Orders
+      summary: Search orders
+      operationId: searchOrders
+      parameters:
+      - name: searchCriteria
+        in: query
+        required: false
+        schema:
+          type: object
+      responses:
+        '200':
+          description: Order search results
+  /V1/orders/{id}:
+    get:
+      tags:
+      - Orders
+      summary: Get order by ID
+      operationId: getOrder
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Order
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      description: Bearer token obtained from /V1/integration/admin/token or /V1/integration/customer/token.
