@@ -10,7 +10,19 @@ description: >-
   Authentication supports OAuth 1.0a, token-based authentication (admin and
   customer tokens), and Adobe IMS for the cloud service.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/magento-2.png
 tags:
 - Ecommerce
 - Commerce
@@ -29,12 +41,11 @@ apis:
 - aid: magento-2:rest-api
   name: Adobe Commerce REST API
   description: >-
-    REST API for managing products, customers, orders, inventory, cart, and
-    checkout in Magento 2 / Adobe Commerce. The base URL pattern is
-    https://{host}/rest/{storeCode}/V1/. Authentication supports OAuth 1.0a
-    for third-party integrations and bearer tokens for admin and customer
-    sessions. A live Swagger UI is available at /swagger when running in
-    developer mode and the OpenAPI schema is available via the schema endpoint.
+    REST API for managing products, customers, orders, inventory, cart, and checkout in Magento 2 / Adobe
+    Commerce. The base URL pattern is https://{host}/rest/{storeCode}/V1/. Authentication supports OAuth
+    1.0a for third-party integrations and bearer tokens for admin and customer sessions. A live Swagger
+    UI is available at /swagger when running in developer mode and the OpenAPI schema is available via
+    the schema endpoint.
   humanURL: https://developer.adobe.com/commerce/webapi/rest/
   baseURL: https://{host}/rest/{storeCode}/V1
   tags:
@@ -49,17 +60,18 @@ apis:
   - type: REST Reference
     url: https://developer.adobe.com/commerce/webapi/reference/rest/paas/
   - type: OAuth Authentication
-    url: https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth/
+    url: >-
+      https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth/
   - type: Token Authentication
-    url: https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token/
+    url: >-
+      https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token/
   - type: OpenAPI Schema
     url: https://{host}/rest/default/schema?services=all
 - aid: magento-2:graphql-api
   name: Adobe Commerce GraphQL API
   description: >-
-    GraphQL API for headless storefront use cases in Magento 2 / Adobe
-    Commerce, providing single-request access to catalog, cart, checkout,
-    and customer data. Mutations require customer token authentication
+    GraphQL API for headless storefront use cases in Magento 2 / Adobe Commerce, providing single-request
+    access to catalog, cart, checkout, and customer data. Mutations require customer token authentication
     via the Authorization header.
   humanURL: https://developer.adobe.com/commerce/webapi/graphql/
   baseURL: https://{host}/graphql
@@ -73,6 +85,66 @@ apis:
     url: https://developer.adobe.com/commerce/webapi/graphql/
   - url: graphql/magento-2-graphql.md
     type: GraphQL
+- aid: magento-2:magento-2-auth-api
+  name: Magento 2 (Adobe Commerce) Auth API
+  description: The Auth API from Magento 2 (Adobe Commerce) — 2 operation(s) for auth.
+  humanURL: https://developer.adobe.com/commerce/webapi/rest/
+  baseURL: https://{host}/rest/{storeCode}/V1
+  tags:
+  - Auth
+  properties:
+  - type: OpenAPI
+    url: openapi/magento-2-auth-api-openapi.yml
+- aid: magento-2:magento-2-carts-api
+  name: Magento 2 (Adobe Commerce) Carts API
+  description: The Carts API from Magento 2 (Adobe Commerce) — 2 operation(s) for carts.
+  humanURL: https://developer.adobe.com/commerce/webapi/rest/
+  baseURL: https://{host}/rest/{storeCode}/V1
+  tags:
+  - Carts
+  properties:
+  - type: OpenAPI
+    url: openapi/magento-2-carts-api-openapi.yml
+- aid: magento-2:magento-2-categories-api
+  name: Magento 2 (Adobe Commerce) Categories API
+  description: The Categories API from Magento 2 (Adobe Commerce) — 2 operation(s) for categories.
+  humanURL: https://developer.adobe.com/commerce/webapi/rest/
+  baseURL: https://{host}/rest/{storeCode}/V1
+  tags:
+  - Categories
+  properties:
+  - type: OpenAPI
+    url: openapi/magento-2-categories-api-openapi.yml
+- aid: magento-2:magento-2-customers-api
+  name: Magento 2 (Adobe Commerce) Customers API
+  description: The Customers API from Magento 2 (Adobe Commerce) — 3 operation(s) for customers.
+  humanURL: https://developer.adobe.com/commerce/webapi/rest/
+  baseURL: https://{host}/rest/{storeCode}/V1
+  tags:
+  - Customers
+  properties:
+  - type: OpenAPI
+    url: openapi/magento-2-customers-api-openapi.yml
+- aid: magento-2:magento-2-orders-api
+  name: Magento 2 (Adobe Commerce) Orders API
+  description: The Orders API from Magento 2 (Adobe Commerce) — 2 operation(s) for orders.
+  humanURL: https://developer.adobe.com/commerce/webapi/rest/
+  baseURL: https://{host}/rest/{storeCode}/V1
+  tags:
+  - Orders
+  properties:
+  - type: OpenAPI
+    url: openapi/magento-2-orders-api-openapi.yml
+- aid: magento-2:magento-2-products-api
+  name: Magento 2 (Adobe Commerce) Products API
+  description: The Products API from Magento 2 (Adobe Commerce) — 2 operation(s) for products.
+  humanURL: https://developer.adobe.com/commerce/webapi/rest/
+  baseURL: https://{host}/rest/{storeCode}/V1
+  tags:
+  - Products
+  properties:
+  - type: OpenAPI
+    url: openapi/magento-2-products-api-openapi.yml
 common:
 - type: AgenticAccess
   url: agentic-access/magento-2-agentic-access.yml
