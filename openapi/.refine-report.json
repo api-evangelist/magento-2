@@ -1,0 +1,24 @@
+{
+  "provider": "magento-2",
+  "sources": [
+    "magento-2-auth-api-openapi.yml",
+    "magento-2-carts-api-openapi.yml",
+    "magento-2-categories-api-openapi.yml",
+    "magento-2-customers-api-openapi.yml",
+    "magento-2-orders-api-openapi.yml",
+    "magento-2-products-api-openapi.yml"
+  ],
+  "outputs": [
+    "magento-2-auth-api-openapi.yml",
+    "magento-2-carts-api-openapi.yml",
+    "magento-2-categories-api-openapi.yml",
+    "magento-2-customers-api-openapi.yml",
+    "magento-2-orders-api-openapi.yml",
+    "magento-2-products-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
