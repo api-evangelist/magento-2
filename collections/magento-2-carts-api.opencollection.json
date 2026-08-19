@@ -1,0 +1,61 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Adobe Commerce (Magento 2) REST Auth Carts API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Carts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the current customer cart",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{host}/rest/{storeCode}/V1/carts/mine"
+          },
+          "docs": "Get the current customer cart"
+        },
+        {
+          "info": {
+            "name": "Create a customer cart",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/carts/mine"
+          },
+          "docs": "Create a customer cart"
+        },
+        {
+          "info": {
+            "name": "Add an item to the current cart",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{host}/rest/{storeCode}/V1/carts/mine/items",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add an item to the current cart"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
