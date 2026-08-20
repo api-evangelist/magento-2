@@ -24,6 +24,15 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/magento-2.png
 tags:
+- E-Commerce
+- Commerce
+- Online Store
+- Catalog Management
+- Order Management
+- GraphQL
+- REST
+- SOAP
+tags_raw:
 - Ecommerce
 - Commerce
 - Online Store
@@ -49,6 +58,12 @@ apis:
   humanURL: https://developer.adobe.com/commerce/webapi/rest/
   baseURL: https://{host}/rest/{storeCode}/V1
   tags:
+  - E-Commerce
+  - REST
+  - Catalog
+  - Order
+  - Customers
+  tags_raw:
   - Ecommerce
   - REST
   - Catalog
@@ -76,6 +91,11 @@ apis:
   humanURL: https://developer.adobe.com/commerce/webapi/graphql/
   baseURL: https://{host}/graphql
   tags:
+  - E-Commerce
+  - GraphQL
+  - Headless Commerce
+  - Storefront
+  tags_raw:
   - Ecommerce
   - GraphQL
   - Headless Commerce
@@ -91,6 +111,8 @@ apis:
   humanURL: https://developer.adobe.com/commerce/webapi/rest/
   baseURL: https://{host}/rest/{storeCode}/V1
   tags:
+  - Authentication
+  tags_raw:
   - Auth
   properties:
   - type: OpenAPI
@@ -101,6 +123,8 @@ apis:
   humanURL: https://developer.adobe.com/commerce/webapi/rest/
   baseURL: https://{host}/rest/{storeCode}/V1
   tags:
+  - Cart
+  tags_raw:
   - Carts
   properties:
   - type: OpenAPI
@@ -131,6 +155,8 @@ apis:
   humanURL: https://developer.adobe.com/commerce/webapi/rest/
   baseURL: https://{host}/rest/{storeCode}/V1
   tags:
+  - Order
+  tags_raw:
   - Orders
   properties:
   - type: OpenAPI
@@ -141,6 +167,8 @@ apis:
   humanURL: https://developer.adobe.com/commerce/webapi/rest/
   baseURL: https://{host}/rest/{storeCode}/V1
   tags:
+  - Product
+  tags_raw:
   - Products
   properties:
   - type: OpenAPI
