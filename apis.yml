@@ -186,6 +186,9 @@ apis:
   - type: OpenAPI
     url: openapi/magento-2-products-api-openapi.yml
 common:
+- type: CapabilityMap
+  url: capabilities/magento-2-capability-edges.yml
+  name: Magento 2 (Adobe Commerce) Business Capability Map
 - type: AgenticAccess
   url: agentic-access/magento-2-agentic-access.yml
 - type: VulnerabilityDisclosure
