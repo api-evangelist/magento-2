@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Adobe Commerce (Magento 2) REST Auth Orders API
+  title: Adobe Commerce (Magento 2) REST Orders API
   description: Adobe Commerce (formerly Magento 2) exposes a REST API at the `/rest/{store-code}/V1/` (or simply `/rest/V1/`) base path for managing products, orders, customers, carts, categories, and other commerce resources. Authentication supports admin and customer integration tokens issued by the API, plus OAuth 1.0a for third-party integrations.
   version: 1.0.0
   contact:

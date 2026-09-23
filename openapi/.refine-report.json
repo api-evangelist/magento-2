@@ -1,12 +1,7 @@
 {
   "provider": "magento-2",
   "sources": [
-    "magento-2-auth-api-openapi.yml",
-    "magento-2-carts-api-openapi.yml",
-    "magento-2-categories-api-openapi.yml",
-    "magento-2-customers-api-openapi.yml",
-    "magento-2-orders-api-openapi.yml",
-    "magento-2-products-api-openapi.yml"
+    "_original/magento-2-openapi.yml"
   ],
   "outputs": [
     "magento-2-auth-api-openapi.yml",
@@ -19,6 +14,17 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "magento-2-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "magento-2-auth-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "magento-2-carts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "magento-2-categories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "magento-2-customers-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "magento-2-orders-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "magento-2-products-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
